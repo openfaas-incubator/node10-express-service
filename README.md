@@ -1,19 +1,17 @@
 OpenFaaS Node.js 10 (LTS) and Express.js micro-service template
 =============================================
 
-This template provides additional context and control over the HTTP response from your function.
+This template provides Node.js 10 (LTS) and full access to [express.js](http://expressjs.com/en/api.html#req.is) for building microservices for OpenFaaS, Docker, Knative and Cloud Run.
 
 ## Status of the template
 
-This template is pre-release and is likely to change - please provide feedback via https://github.com/openfaas/faas
-
-The template makes use of the OpenFaaS incubator project [of-watchdog](https://github.com/openfaas-incubator/of-watchdog).
+This template is experimental and I would like your feedback through GitHub issues.
 
 ## Supported platforms
 
-* x86_64 - `node10-express`
+* x86_64 - `node10-express-service`
 
-## Trying the template
+## Get started
 
 ```
 $ export USERNAME=alexellisuk
