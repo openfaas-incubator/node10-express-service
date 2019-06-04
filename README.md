@@ -46,7 +46,6 @@ See also: [Deploy OpenFaaS](https://docs.openfaas.com/deployment/)
 
 module.exports = async (config) => {
     const app = config.app;
-    app.disable('x-powered-by');
 
     app.get('/', (req, res) => {
         res.send("Hello world");
@@ -67,7 +66,6 @@ const moment = require('moment');
 
 module.exports = async (config) => {
     const app = config.app;
-    app.disable('x-powered-by');
 
     app.get('/', (req, res) => {
         res.send(moment());
@@ -96,7 +94,6 @@ class Routing {
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.raw());
         this.app.use(bodyParser.text({ type : "text/*" }));
-        this.app.disable('x-powered-by');        
     }
 
     bind(route) {
