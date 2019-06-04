@@ -16,8 +16,10 @@ The template makes use of the OpenFaaS incubator project [of-watchdog](https://g
 ## Trying the template
 
 ```
+$ export USERNAME=alexellisuk
+
 $ faas template pull https://github.com/openfaas-incubator/node10-express-service
-$ faas new --lang node10-express
+$ faas new --lang node10-express-service microservice1 --prefix="${USERNAME}"
 ```
 
 ## Example usage
