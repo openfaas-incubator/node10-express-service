@@ -7,8 +7,7 @@ RUN chmod +x /usr/bin/fwatchdog
 
 RUN addgroup -S app && adduser -S -g app app
 
-RUN apk --no-cache add ca-certificates \
-    && apk del curl
+RUN apk --no-cache add ca-certificates
 
 WORKDIR /root/
 
